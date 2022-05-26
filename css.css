@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body{
+
+      background-image: url(.///imagens/puma.jpg);
+
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: black;
+    height: 8vh;
+  }
+
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+   .wpplink{
+
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 50px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 42px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+   }
+
+   .fa-whatsapp {
+			margin-top: 16px;
+		}
+
+        .logoatv{
+
+            width: 50px;
+            height: 700px;
+        }
+
+asite{
+
+  width: 500em;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+
+   width: 880;
+  padding: 450;
+  background-color: black;
+  max-width: 800px;
+   width: 90%;
+   padding: 20px;
+   color: white;
+    font-family: FFDINforPumaW01, Helvetica, Roboto, Arial, sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+h7{
+
+   width: 880;
+  padding: 450;
+  background-color: black;
+  max-width: 800px;
+   width: 90%;
+   padding: 20px;
+   color: white;
+    font-family: FFDINforPumaW01, Helvetica, Roboto, Arial, sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+aside {
+    width: 50em;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 90vh;
+    border: 1px solid grey;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+main {
+    display: flex;
+    width: 910px;
+
+}
+.menu  {
+
+    background-color: black;
+    max-width: 600px;
+   width: 54%;
+    padding: 125px;
+    border-radius: 20px;
+    font-family: FFDINforPumaW01, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 25px;
+}
+
+
+
+
+div{
+
+    max-width: 700px;
+    position: fixed;
+    display: block;
+    top: 60%;
+    left: 55%;
+    transform: translate(-75%, -50%);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px;
+    color: #fff;
+    font-family: FFDINforPumaW01, Helvetica, Roboto, Arial, sans-serif;
+    border-radius: 20px;
+
+}
+
+.videoyt{
+
+   width: 150px;
+   height: 150px;
+
+}
+
+.logoatv{
+
+  width: 10px;
+  height: 0px;
+position: relative;
+left: -800px;
+top: -150px;
+background-color: white;
+padding: 1px;
+
+}
+
+.infos{
+
+  background-color: black;
+  position: relative;
+  left: 830px;
+   top: 350px;
+
+
+}
+
